@@ -1,12 +1,10 @@
 package org.example.lesson_1
 
-import java.util.Date
-
 fun main() {
 
-    val year: Short = 1961 //val, так как по задаче эта переменная статична. Есть ли тут смысл использовать Short?
-    var hour: String = "09" //var
-    var minute: String = "10" //var
+    val year: Short = 1961
+    var hour: String = "09"
+    var minute: String = "07"
 
     //Вывод даты и времени полета
     println("Год взлета: $year")
