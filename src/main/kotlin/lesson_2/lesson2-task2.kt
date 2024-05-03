@@ -8,9 +8,9 @@ fun main() {
     val internSalary: Int = 20_000
 
     val allWorkersCount: Int = employeeCount + internCount
-    val companyExpensesForEmployees: Int = employeeCount*employeeSalary
-    val companyExpenses: Int = companyExpensesForEmployees + (internCount*internSalary)
-    val averageSalary: Int = companyExpenses/allWorkersCount
+    val companyExpensesForEmployees: Int = employeeCount * employeeSalary
+    val companyExpenses: Int = companyExpensesForEmployees + (internCount * internSalary)
+    val averageSalary: Int = companyExpenses / allWorkersCount
 
     println("Количество сотрудников: $employeeCount")
     println("Зарплата сотрудников: $employeeSalary")
