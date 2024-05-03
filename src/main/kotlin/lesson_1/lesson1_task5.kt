@@ -2,16 +2,17 @@ package org.example.lesson_1
 
 fun main() {
 
-    val secondsInSpace: Int = 6483 //Я добавил 3 секунды к значению из прошлой задачи
-    var remainder: Int = secondsInSpace //Остаток от секунд. Var, так как будет меняться по ходу задачи
+    val secondsInSpace: Int = 6480
+    val secondsInOneHour: Int = 3600
+    val secondsInOneMinute: Int = 60
 
     //Вычисляем сколько часов в значении secondsInSpace, вычисляем остаток путем вычитания
-    val hour: Int = secondsInSpace/3600
-    remainder = secondsInSpace - (hour*3600)
+    val hour: Int = secondsInSpace / secondsInOneHour
+    var remainder: Int = secondsInSpace - (hour * secondsInOneHour)
 
     //Аналогично для минут
-    val minute: Int = remainder/60
-    remainder = remainder - (minute*60)
+    val minute: Int = remainder / secondsInOneMinute
+    remainder = remainder - (minute * secondsInOneMinute)
 
     //Вывод значений
     print("Время в космосе: ") //Print, чтобы не было переноса на новую строку
