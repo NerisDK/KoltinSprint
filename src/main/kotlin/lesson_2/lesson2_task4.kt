@@ -4,10 +4,13 @@ fun main() {
 
     val crystals: Int = 7
     val iron: Int = 11
-    val buffEffect: Double = 1.2
+    val buffPercentage: Int = 20 //%
+    val defaultPercentage: Int = 100 //%
+    val converterToFraction: Double = 100.0
+    val buffEffect: Double = (buffPercentage + defaultPercentage) / converterToFraction
 
-    val buffedCrystals: Int = (crystals*buffEffect).toInt()
-    val buffedIron: Int = (iron*buffEffect).toInt()
+    val buffedCrystals: Int = (crystals * buffEffect).toInt()
+    val buffedIron: Int = (iron * buffEffect).toInt()
 
     val bonusCrystals: Int = buffedCrystals - crystals
     val bonusIron: Int = buffedIron - iron
