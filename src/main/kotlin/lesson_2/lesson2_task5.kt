@@ -6,15 +6,8 @@ fun main() {
     val yearPercentage: Double = 16.7 //%
     val numberOfYears: Int = 20 //лет
     val defaultPercentage: Int = 100 //%
-    var annualRate: Double = ((yearPercentage + defaultPercentage) / defaultPercentage).toDouble()
-    var profitFromAnnualRate: Double = 0.0
-    var result: Double = amountOfMoney.toDouble() //руб.
-
-
-    for (i in 1..numberOfYears) {
-        profitFromAnnualRate = (result * annualRate) - result
-        result += profitFromAnnualRate
-    }
+    val annualRate: Double = ((yearPercentage + defaultPercentage) / defaultPercentage)
+    val result = amountOfMoney * Math.pow(annualRate, numberOfYears.toDouble())
 
     println("%.3f".format(result))
 }
