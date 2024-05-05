@@ -6,8 +6,7 @@ fun main() {
     val yearPercentage: Double = 16.7 //%
     val numberOfYears: Int = 20 //лет
     val defaultPercentage: Int = 100 //%
-    val converterToFraction: Double = 100.0
-    var annualRate: Double = (yearPercentage + defaultPercentage) / converterToFraction
+    var annualRate: Double = ((yearPercentage + defaultPercentage) / defaultPercentage).toDouble()
     var profitFromAnnualRate: Double = 0.0
     var result: Double = amountOfMoney.toDouble() //руб.
 
