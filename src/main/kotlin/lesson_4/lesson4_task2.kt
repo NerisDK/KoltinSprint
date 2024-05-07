@@ -8,10 +8,10 @@ fun main() {
 
     var givenWeight: Int = 20 //кг
     var givenVolume: Int = 80 //литров
-    println("Груз с весом $givenWeight кг и объемом $givenVolume литров соответствует категории 'Average': ${if (givenWeight <= maxWeight && givenWeight > minWeight && givenVolume < maxVolume) true else false}")
+    println("Груз с весом $givenWeight кг и объемом $givenVolume литров соответствует категории 'Average': ${(givenWeight <= maxWeight && givenWeight > minWeight && givenVolume < maxVolume)}")
 
     givenWeight = 50 //кг
     givenVolume = 100 //литров
-    println("Груз с весом $givenWeight кг и объемом $givenVolume литров соответствует категории 'Average': ${if (givenWeight <= maxWeight && givenWeight > minWeight && givenVolume < maxVolume) true else false}")
+    println("Груз с весом $givenWeight кг и объемом $givenVolume литров соответствует категории 'Average': ${(givenWeight <= maxWeight && givenWeight > minWeight && givenVolume < maxVolume)}")
 
 }
