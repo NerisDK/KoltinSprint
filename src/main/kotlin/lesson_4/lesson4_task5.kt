@@ -17,8 +17,9 @@ fun main() {
     print("Благоприятность погоды (true/false): ")
     val weatherIsGood: Boolean = readLine()!!.toBoolean()
 
-    val mainAllowing: Boolean = if (!shipIsDamaged && peopleCount in minPeople..maxPeople && boxCount >= minBoxCount && weatherIsGood) true else false
-    val alternativeAllowing: Boolean = if (peopleCount == maxPeople && weatherIsGood && boxCount >= minBoxCount) true else false
+    val mainAllowing: Boolean =
+        (!shipIsDamaged && peopleCount in minPeople..maxPeople && boxCount >= minBoxCount && weatherIsGood)
+    val alternativeAllowing: Boolean = (peopleCount == maxPeople && weatherIsGood && boxCount >= minBoxCount)
 
     if (mainAllowing || alternativeAllowing) {
         println("Судно готово к отплыву!")
