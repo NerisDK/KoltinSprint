@@ -8,7 +8,9 @@ fun main() {
 
     //Пятый день тренировок
     val currentWorkoutDay: Int = 3
-    if (currentWorkoutDay !in 1..currentWorkoutDay step 2) {
+    val isEvenDay: Boolean = currentWorkoutDay !in 1..currentWorkoutDay step 2
+
+    if (isEvenDay) {
         armsAndPressDay = false
         legsAndBackDay = true
     }
