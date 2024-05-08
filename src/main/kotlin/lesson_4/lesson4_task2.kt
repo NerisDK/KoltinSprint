@@ -5,7 +5,8 @@ fun main() {
 
     var givenWeight: Int = 20 //кг
     var givenVolume: Int = 80 //литров
-    var isAverage: Boolean = givenWeight <= MAX_WEIGHT && givenWeight > MIN_WEIGHT && givenVolume <= MAX_VOLUME
+    var isAverage: Boolean =
+        givenWeight <= MAX_WEIGHT && givenWeight > MIN_WEIGHT && givenVolume <= MAX_VOLUME
     println(
         "Груз с весом $givenWeight кг и объемом $givenVolume литров соответствует категории 'Average': " +
                 "$isAverage"
@@ -13,7 +14,8 @@ fun main() {
 
     givenWeight = 50 //кг
     givenVolume = 100 //литров
-    isAverage = givenWeight <= MAX_WEIGHT && givenWeight > MIN_WEIGHT && givenVolume <= MAX_VOLUME
+    isAverage =
+        givenWeight <= MAX_WEIGHT && givenWeight > MIN_WEIGHT && givenVolume <= MAX_VOLUME
     println(
         "Груз с весом $givenWeight кг и объемом $givenVolume литров соответствует категории 'Average': " +
                 "$isAverage"
